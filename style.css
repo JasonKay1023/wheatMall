@@ -1,9 +1,10 @@
 /*home page*/
 body{ margin: 0px;}
+body * { max-height: 999999px; }
 #container{ width: 980px; margin: 0 auto; font-size: 12px;}
 h1, h2, h3, h4, h5, h6, ul, li{ margin: 0; padding:0; list-style-type: none;}
 a{ text-decoration: none;}
-*{font-family: Arial; max-height:999999px;}
+*{font-family: Arial;}
 input,textarea,button,a:focus{outline: none;}
 
 #pageheader{ min-height: 71px;}
