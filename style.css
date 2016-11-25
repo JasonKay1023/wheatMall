@@ -11,6 +11,7 @@ input,textarea,button,a:focus{outline: none;}
 #pageheader a:hover{ color: #e34543;}
 .logo{ width: 220px; height: 60px; float: left; padding-top: 8px;}
 .info{ width: 384px; float: left; margin: 30px 0 0 10px;}
+.info span, .info a{font-size: 12px;}
 .nav{ width:366px; float:left;}
 .nav ul{ margin-top: 11px}
 .nav ul li{ display: inline-block;}
@@ -18,6 +19,7 @@ input,textarea,button,a:focus{outline: none;}
 #navUnder ul li{ display: inline-block; line-height: 36px; font-size: 15px;  color: #ffffff;}
 #navUnder ul li a{ color: #ffffff; font-weight: bold;}
 #navUnder ul li a:hover{ color: #ffffff; font-weight: bold;}
+#sort{font-size: 12px;}
 
 #pagebody{ min-height: 1300px;}
 #left{ width: 195px; min-height: 600px; float: left;}
@@ -100,6 +102,7 @@ input,textarea,button,a:focus{outline: none;}
 
 /*productList*/
 .plm-header{background: url(img/sort1.gif); line-height: 29px;}
+.plm-header a, .plm-header span{font-size: 12px;}
 .plm-header-first{background: url(img/home.gif) no-repeat left; display: inline-block; text-indent: 15px; margin-left: 5px;}
 .icon-btn-vbarrow {display: inline-block; background: url(img/icon.png) -111px -423px; height: 9px; width: 5px;}
 .plm-list{margin: 5px 3px;}
@@ -145,11 +148,16 @@ input,textarea,button,a:focus{outline: none;}
 .product-info-top{margin-left: 15px; font-weight: bold; color: #00267F; font-size: 14px; border-bottom: 1px dotted #dcdbdb; line-height: 36px;}
 .product-info-top a{float: right; font-weight:normal;  color: #666666; font-size: 12px;}
 .product-info-middle{margin-left: 15px; border-bottom: 1px dotted #dcdbdb; line-height: 25px;}
+.product-info-middle span, .product-info-middle a{font-size: 12px;}
 .product-info-bottom{margin-left: 15px; line-height: 25px; }
+.product-info-bottom span{font-size: 12px;}
+.product-info-bottom input{font-size: 12px;}
 .product-info-bottom a{display:inline-block; width: 81px; height: 26px; margin-right: 5px;}
 .product-next-pay{width: 770px; clear: both; border-top:1px solid #EEEEEE; border-bottom:1px solid #EEEEEE; line-height: 40px; position: relative;}
+.product-next-pay span, .product-next-pay a{font-size: 12px;}
 .alipay{width: 129px; height: 30px; background: url(img/pay/alipay_buy.gif); display: inline-block; position: absolute; top: 5px; right:155px;}
 .paypal{width: 138px; height: 30px; background: url(img/pay/paypal_buy.gif); display: inline-block; position: absolute; top: 5px; right:5px;}
+#product-tabs p{font-size: 12px;}
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
     color: #d6290b;
 }
