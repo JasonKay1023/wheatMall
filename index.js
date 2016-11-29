@@ -107,3 +107,43 @@ $(document).ready(function () {
 
     $('#product-tabs').tabs();
 });
+
+$(function () {
+    $.fn.manifier = function () {
+        var $this = $(this),//原始图片容器
+            $slideCon = $this.find('.magnifierSlide'),//滑块容器
+            $magnifierCon = $this.find('.magnifierImg'),//放大镜容器
+            $magnifierImg = $magnifierCon.find('img'),//放大镜图片
+            $multipleX = $magnifierCon.width() / $slideCon.width(),
+            $multipleY = $magnifierCon.height() / $slideCon.height();
+
+       $this.on('mousemove',function (e) {
+           $slideCon.css('display','block');
+           $magnifierCon.css('display','block');
+           var currentX = e.pageX - $this.offset().left - $slideCon.width()/2,
+               currentY = e.pageY - $this.offset().top - $slideCon.height()/2,
+               maxX = $this.width() - $slideCon.width(),
+               maxY = $this.height() - $slideCon.height();
+
+           currentX = currentX > 0 ? currentX : 0;
+           currentX = currentX < maxX ? currentX : maxX;
+           currentY = currentY > 0 ? currentY : 0;
+           currentY = currentY < maxY ? currentY : maxY;
+
+           $slideCon.css({
+               'left': currentX,
+               'top': currentY
+           });
+           $magnifierImg.css({
+               'marginLeft': -currentX * $multipleX,
+               'marginTop': -currentY * 2.2
+           });
+       });
+
+        $this.on('mouseout',function () {
+            $slideCon.css('display','none');
+            $magnifierCon.css('display','none');
+        });
+    };
+    $('.product-big-pic').manifier();
+});
