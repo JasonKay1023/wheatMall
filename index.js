@@ -90,7 +90,7 @@ $(document).ready(function () {
 
 
     var smallImg = $('.product-small-pic img');
-    for(i=0; i<smallImg.length; i++){
+    for(var i=0; i<smallImg.length; i++){
         smallImg[i].index = i;
         smallImg.eq(i).on('mouseover',function () {
             for(i=0; i<smallImg.length; i++){
@@ -105,7 +105,6 @@ $(document).ready(function () {
         });
     }
 
-    $('#product-tabs').tabs();
 });
 
 $(function () {
@@ -146,4 +145,36 @@ $(function () {
         });
     };
     $('.product-big-pic').manifier();
+});
+
+$(function () {
+    var oLi = $('.priceList-row > li');
+
+    for (var i = 0; i < oLi.length; i++){
+        oLi.eq(i).find('.priceList-product li').eq(3).css('color', '#ff0000');
+        if (i % 2 == 1) {
+            oLi.eq(i).css('background', '#f5f5f5');
+        }else {
+            oLi.eq(i).css('background', '#ffffff');
+        }
+    }
+});
+
+$(function () {
+    $('#product-tabs').tabs();
+    var aLi = $('#registerOrLogin li');
+    var aDiv = $('#registerOrLogin form').find('div');
+    for (var i=0; i<aLi.length; i++){
+        aLi[i].index = i;
+        aLi.eq(i).on('click', function () {
+            for (var i=0; i<aLi.length; i++){
+                aLi.eq(i).removeClass();
+                aLi.eq(i).find('a').css('color','#555');
+                aDiv.eq(i).css('display', 'none');
+            }
+            aDiv.eq(this.index).css('display', 'block');
+            $(this).addClass('registerOrLogin active');
+            $(this).find('a').css('color','#3cf');
+        });
+    }
 });

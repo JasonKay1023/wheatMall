@@ -1,0 +1,43 @@
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #d6290b;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: url(img/sort1.gif);
+    border: 1px solid #dddddd;
+    font-weight: normal;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #ffffff;
+    font-weight: bold;
+}
+
+.ui-widget-header {
+    background: url(img/sortbg.jpg) repeat-x 0 6px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    color: #333;
+    font-weight: bold;
+}
+
+.ui-tabs .ui-tabs-panel {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding: 0.2em 0 0;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麦子商城</title>
+    <link rel="stylesheet" href="jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="container">
+    <!--页面头部-->
+    <div id="pageheader">
+        <div class="logo"><img src="img/logo.gif" alt="麦子商城"></div>
+        <div class="info">
+            <span>您好，欢迎来到麦子商城！要继续购物？<a href="#">[请登录]</a>，新用户？<a href="#">[免费注册]</a></span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">帮助中心</a>&ensp;|</li>
+                <li><a href="#">客户反馈</a>&ensp;|</li>
+                <li><a href="#">网站地图</a>&ensp;|</li>
+                <li><a href="#">加入收藏</a></li>
+                <li style="width: 110px;" id="time">YYYY/MM/DD 星期?</li>
+            </ul>
+        </div>
+        <div>
+            <marquee direction="down" scrollamount="1" height="25px" width="360px" style="text-indent: 55px; padding-top: 6px;">
+                <a href="#">最新公告：明天有秒杀活动！</a>
+            </marquee>
+        </div>
+        <div id="navUnder" style="clear: both;" >
+            <div style="background: url(img/top_1.gif); height: 36px">
+                <ul>
+                    <li><a href="#">网站首页</a>&ensp;|&ensp;</li>
+                    <li><a href="#">分类导航</a>&ensp;|&ensp;</li>
+                    <li><a href="#">品牌导航</a>&ensp;|&ensp;</li>
+                    <li><a href="#">购物帮助</a>&ensp;|&ensp;</li>
+                    <li><a href="#">新闻资讯</a>&ensp;|&ensp;</li>
+                    <li><a href="#">报价单</a>&ensp;|&ensp;</li>
+                    <li><a href="#">发货单</a></li>
+                </ul>
+            </div>
+            <div style="background: url(img/top_2.gif); height: 32px; position: relative;">
+                <label for="sort" style="margin-left: 25px; color: #fff; font-weight: bold; font-size: 14px"> 商品搜索：</label>
+                <select id="sort" style="width: 120px;">
+                    <option value="allSort">所有分类</option>
+                    <option value="hot">热卖商品</option>
+                    <option value="new">最新商品</option>
+                </select>
+                <input type="search" style="width: 260px; margin-left: 2px;">
+                <input type="image" src="img/search2.gif" style="position: relative; top: 5px; left: 5px" >
+                <span style="margin-left: 25px;"><a href="#" style="color: #FFF;">高级/组合搜索</a></span>
+                <div style="background: url(img/d3.jpg) no-repeat; width: 305px; height: 24px; position: absolute; left:660px; top:5px;">
+                    <span style="position: absolute; left: 30px; top: 4px;"><a href="#">购物车暂时为空</a></span>
+                    <span style="position: absolute; left: 180px; top: 4px;"><a href="#">去结算</a></span>
+                    <span style="position: absolute; left: 250px; top: 4px;"><a href="#">用户中心</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页面主体-->
+    <div id="pagebody" style="min-height: 500px;">
+        <!--中-->
+        <div style="text-align: right; line-height: 26px;">
+            <span style="margin-right: 5px;"><a style="color: #666;" href="#">打印报价单</a></span>
+        </div>
+        <div style="background: url(img/nbg.gif) 5px; height: 20px; border-bottom: 1px solid #e4e4e4; ">
+            <h3>服装鞋帽</h3>
+        </div>
+        <div class="priceList-title">
+            <ul>
+                <li style="width: 85px;">图片</li>
+                <li style="width: 468px;">商品</li>
+                <li style="width: 125px; text-align: center;">零售价</li>
+                <li style="width: 125px; text-align: center;">本站价</li>
+                <li style="width: 65px; text-align: center;">库存</li>
+                <li style="width: 105px; text-align: center;">购买</li>
+            </ul>
+        </div>
+        <div style="margin-left: 1px; clear: both;">
+            <ul class="priceList-row">
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="priceList-product">
+                        <li style="width: 85px;"><img src="img/5.jpg"></li>
+                        <li style="width: 468px;"><span>高品质实拍热卖可搭配卫衣秋冬装休闲英伦长款</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥966.00元</span></li>
+                        <li style="width: 125px; text-align: center;"><span>¥829.00元</span></li>
+                        <li style="width: 65px; text-align: center;"><span>999</span></li>
+                        <li style="width: 105px; text-align: center;"><span>定购</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="height: 60px; line-height: 60px; background: url(img/footbg_03.jpg); margin-bottom: 5px;">
+            <span>第<span>1</span>页／共<span>1</span>页</span>&ensp;&ensp;
+            <span>
+                <a href="#" style="color: #000;">上一页</a>&ensp;
+                <a href="#" style="color: #000;">下一页</a>
+            </span>&ensp;&ensp;
+            <span>页面跳转：
+                <input type="text" style="width: 30px;">
+                <input type="button" value="GO"></span>
+        </div>
+    </div>
+
+    <!--页面底部-->
+    <div id="pagefooter">
+        <div>
+            <ul class="bigTitle">
+                <li>
+                    <h3>关于我们</h3>
+                    <ul class="smallTitle">
+                        <li><a href="#">发展历程</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">公司文化</a></li>
+                        <li><a href="#">企业文化</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>付款方式</h3>
+                    <ul class="smallTitle">
+                        <li><a href="#">银行汇款</a></li>
+                        <li><a href="#">在线支付</a></li>
+                        <li><a href="#">银行汇款</a></li>
+                        <li><a href="#">公司转账</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>送货方式</h3>
+                    <ul class="smallTitle">
+                        <li><a href="#">上门自提</a></li>
+                        <li><a href="#">EMS快递</a></li>
+                        <li><a href="#">快递发货</a></li>
+                        <li><a href="#">平邮发货</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>售后服务</h3>
+                    <ul class="smallTitle">
+                        <li><a href="#">质保承诺</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">价格保护</a></li>
+                        <li><a href="#">返修申请</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>购物帮助</h3>
+                    <ul class="smallTitle">
+                        <li><a href="#">用户等级</a></li>
+                        <li><a href="#">积分获得与使用</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
