@@ -1,0 +1,26 @@
+#registerOrLogin input.error{
+    border: 1px solid #ea5a70;
+}
+
+#registerOrLogin input.valid{
+    border: 1px solid #1dc091;
+}
+
+label.error{
+    float: right;
+    color: #ea5a70;
+}
+
+label[for='agree'].error{
+    margin-top: 4px;
+}
+
+.tick{
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    background: url(img/form/checked.png) no-repeat;
+    right: 5px;
+    top: 15px;
+}
